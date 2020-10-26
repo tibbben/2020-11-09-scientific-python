@@ -125,11 +125,7 @@ address.
 {% if page.latitude and page.longitude and online == "false" %}
 <p id="where">
   <strong>Where:</strong>
-  {{page.address}}.
-  Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
+  Zoom - The instructors will provide you with the information you will need to connect to this meeting.
 </p>
 {% elsif online == "true_public" %}
 <p id="where">
@@ -164,7 +160,7 @@ SPECIAL REQUIREMENTS
 Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
+  <strong>Requirements:</strong> Participants must have a laptop with a
   Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
 </p>
 
@@ -174,6 +170,7 @@ ACCESSIBILITY
 Modify the block below if there are any barriers to accessibility or
 special instructions.
 {% endcomment %}
+{% comment %}
 <p id="accessibility">
   <strong>Accessibility:</strong>
 {% if online == "false" %}
@@ -198,6 +195,7 @@ special instructions.
   anything we can do to make this workshop more accessible to you.
 </p>
 {% endif %}
+{% endcomment %}
 
 {% comment %}
 CONTACT EMAIL ADDRESS
@@ -223,13 +221,13 @@ Display the contact email address set in the configuration file.
   {% endif %}
   for more information.
 </p>
-
+{% comment %}
 <p id="roles">
   <strong>Roles:</strong>
   To learn more about the roles at the workshop (who will be doing what),
   refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
 </p>
-
+{% endcomment %}
 {% comment %}
 WHO CAN ATTEND?
 
@@ -256,6 +254,7 @@ Edit the text to match who can attend the workshop. For instance:
 {% comment%}
 CODE OF CONDUCT
 {% endcomment %}
+{% comment%}
 <h2 id="code-of-conduct">Code of Conduct</h2>
 
 <p>
@@ -267,6 +266,7 @@ Everyone who participates in Carpentries activities is required to conform to th
     <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
   </a>
 </p>
+{% endcomment %}
 <hr/>
 
 
@@ -298,8 +298,8 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+<p><a href="#">Pre-workshop Survey</a></p>
+<p><a href="#">Post-workshop Survey</a></p>
 
 <hr/>
 
