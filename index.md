@@ -14,9 +14,9 @@ humantime: "9:00 am - 4:30 pm"    # human-readable times for the workshop (e.g.,
 startdate: 2020-11-09      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2020-11-10        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Tim Norris", "Cameron Riopelle"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["James Sobzcak","Dana Godrich"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["tnorris@miami.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+helper: ["James Sobzcak","Dana Godrich","Thilani Samarakoon"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["tnorris@miami.edu","criopelle@miami.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes: https://etherpad.wikimedia.org/p/2020-11-09-scientific-python # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -298,8 +298,8 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="#">Pre-workshop Survey</a></p>
-<p><a href="#">Post-workshop Survey</a></p>
+<p><a href="http://survey.constantcontact.com/survey/a07ehe68undkh3mue7o/_tmp/questions">Pre-workshop Survey</a></p>
+<p><a href="http://survey.constantcontact.com/survey/a07ehe69vefkh3ny7y5/_tmp/questions">Post-workshop Survey</a></p>
 
 <hr/>
 
